@@ -1,0 +1,96 @@
+body {
+    font-family: "Cormorant";
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.header-flex-wrap {
+    display: flex;
+    margin-top: 51px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.header-right-side-menu {
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+
+.logo-text {
+    padding: 4px 10px 9px 11px;
+    width: 178px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+}
+
+.header-menu-icon {
+    width: 13px;
+    position: relative;
+    top: 3px;
+}
+
+.header-bag {
+    display: flex;
+    margin-right: 7px;
+}
+
+.main-photo {
+    background-color: #011725;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.main-catalog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main-catalog-item {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    width: 208px;
+    background-color: #F0F0F0;
+    margin-top: 45px;
+}
+.main-catalog-item-img {
+    width: 100%;
+}
+.main-catalog-item-bottom {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    padding: 6px 0 13px;
+}
+.main-catalog-item-bottom-text {
+    font-size: 20xp;
+}
+
+.main-catalog-item-bottom-arrow {
+    position: relative;
+    top: 2px;
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+}
+
+footer {
+    font-size: 24px;
+    height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}

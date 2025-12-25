@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="../static/css/reset.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Bitter:wght@100..900&family=Kalnia&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-menu header">
+        <nav class="logo"> <a href="main.html">beautymeansjewelry</a></nav>
+        <nav class="main-menu-center container">
+            <li>
+                <a class="header-nav-link" href="catalog.html">
+                    <span>каталог</span>
+                </a>
+            </li>
+            <li>
+                <a class="header-nav-link" href="contacts.html">
+                    <span>контакты</span>
+                </a>
+            </li>
+            <li>
+                <a class="header-nav-link" href="information.html">
+                    <span>информация</span>
+                </a>
+            </li>
+        </nav>
+        <nav class="main-menu-right-side container">
+            <li class="header-login">
+                <a class="header-nav-link" href="#">
+                    <span>Вход</span>
+                </a>
+            </li>
+            <li class="header-bag">
+                <a class="header-nav-link" href="bag.html">
+                    <img src="../static/icons/Header_Bag.svg" alt="Header_Bag">
+                </a>
+                <span class="bag-counter" >2</span>
+            </li>
+        </nav>
+    </header>
+    <main>
+        <section class="registration container">
+            <h2 class="registration-page-name">вход</h2>
+            <div class="form-and-text">
+            <form action="" method="">
+                <label>
+                    <span class="input-label">username</span>
+                    <input class="input-text" type="text" placeholder="Gustafv">
+                </label>
+                <div class="password-flex-wrap">
+                    <label>
+                        <span class="input-label">пароль</span>
+                        <input class="input-text" type="password" placeholder="qwerty123">
+                    </label>
+                    <button><img class="registration-password-eye-icon" src="../static/icons/Registration_Eye.svg" alt="Registration_Eye"></button>
+                </div>
+                <button class="profile-save-button">войти</button>
+            </form>
+            </div>
+            <a class="registration-login-button" href="registration.html">нет аккаунта? зарегистрироваться</a>
+        </section>
+    </main>
+    <footer>
+        <p class="footer">© 2025 - </p>
+    </footer>
+</body>
+</html>

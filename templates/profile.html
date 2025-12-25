@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="../static/css/reset.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Bitter:wght@100..900&family=Kalnia&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-menu header">
+        <nav class="logo"> <a href="main.html">beautymeansjewelry</a></nav>
+        <nav class="main-menu-center container">
+            <li>
+                <a class="header-nav-link" href="catalog.html">
+                    <span>каталог</span>
+                </a>
+            </li>
+            <li>
+                <a class="header-nav-link" href="contacts.html">
+                    <span>контакты</span>
+                </a>
+            </li>
+            <li>
+                <a class="header-nav-link" href="information.html">
+                    <span>информация</span>
+                </a>
+            </li>
+        </nav>
+        <nav class="main-menu-right-side container">
+            <li class="header-login">
+                <a class="header-nav-link" href="#">
+                    <span>Вход</span>
+                </a>
+            </li>
+            <li class="header-bag">
+                <a class="header-nav-link" href="bag.html">
+                    <img src="../static/icons/Header_Bag.svg" alt="Header_Bag">
+                </a>
+                <span class="bag-counter" >2</span>
+            </li>
+        </nav>
+    </header>
+    <main>
+        <section class="container">
+            <div class="profile">
+                <a class="profile-order-history" href="order-history.html">
+                    <img class="profile-order-history-icon" src="../static/icons/Profile_Layers.svg" alt="Profile_Layers">
+                    <p class="profile-order-history-text">история заказов</p>
+                </a>
+            </div>
+            <a class="arrow-back-link" href="javascript:history.back()">
+                <img class="arrow-back-icon" src="../static/icons/Back-arrow-icon.svg" alt="Back-arrow-icon">
+            </a>
+            <div class="profile">
+                <a class="profile-wishlist" href="wishlist.html">
+                    <img class="profile-wishlist-icon" src="../static/icons/Profile_heart.svg" alt="Profile_heart">
+                    <p class="profile-wishlist-text">избранное</p>
+                </a>
+            </div>
+            <div class="form-text-display">
+                <p class="form-text">мои данные</p>
+            </div>
+            <div class="form-and-text">
+            <form action="" method="">
+                <label>
+                    <span class="input-label">username</span>
+                    <input class="input-text" type="text" placeholder="Gustafv">
+                </label>
+                <label>
+                    <span class="input-label">email</span>
+                    <input class="input-text" type="email" placeholder="timur.umarov@outlook.com">
+                </label>
+                <label>
+                    <span class="input-label">имя</span>
+                    <input class="input-text" type="text" placeholder="Тимур">
+                </label>
+                <label>
+                    <span class="input-label">фамилия</span>
+                    <input class="input-text" type="text" placeholder="Умаров">
+                </label>
+                <label>
+                    <span class="input-label">день рождения</span>
+                    <input class="input-text" type="date" placeholder="31">
+                </label>
+                <label>
+                    <span class="input-label">номер телефона</span>
+                    <input class="input-text" type="tel" placeholder="+79612574536">
+                </label>
+                <label>
+                    <span class="input-label">предпочитаемый вид связи</span>
+                    <select>
+                        <option value="option1">telegram</option>
+                        <option value="option2">vk</option>
+                    </select>
+                </label>
+                <button class="profile-save-button">сохранить</button>
+            </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="footer">© 2025 - </p>
+    </footer>
+</body>
+</html>
