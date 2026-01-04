@@ -100,48 +100,65 @@ footer {
     margin-top: 100px;
 }
 
-.button {
-  inline-size: 100%;
-  padding: 0.5lh 1.5lh;
-  font: inherit;
-  color: currentColor;
-  background-color: #f28482;
-  border: none;
-  cursor: pointer;
+/* Catalog */
+
+.catalog-page {
+    display: flex;
+    align-items: center;
+    margin-top: 48px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid;
+    justify-content: center;
+    margin-bottom: 54px;
 }
 
-.button:hover,
-.button:focus-visible {
-  background-color: #f5cac3;
+.arrow-back-link {
+    width: 20px;
+    position: relative;
+    left: -60px;
 }
 
-.menu {
-  position: relative;
-  display: grid;
-  margin-block-start: 0.5lh;
-  background-color: #f28482;
-
-  overflow: hidden;
-  line-height: 0;
-  color: transparent;
-  transition: line-height 0.5s, color 0.5s;
+.catalog-page-name {
+    font-size: 36px;
+    margin-left: 10px;
+    position: relative;
+    top: -7px;
 }
 
-.menu-item {
-  overflow: hidden;
+.catalog-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.catalog-content-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 45px;
+}
+.catalog-content-item-img {
+    width: 218px;
+    height: 230px;
+}
+.catalog-content-item-text {
+    width: 218px;
+    text-align: center;
+    margin-top: 11px;
+    font-size: 16px;
 }
 
-.menu-link {
-  display: block;
-  padding: 0.5lh 80px;
+.catalog-content-item-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 11px;
 }
 
-.menu-link:hover,
-.menu-link:focus-visible {
-  background-color: #f5cac3;
-}
-
-.button.active ~ .menu {
-  line-height: 1.2;
-  color: currentColor;
+.catalog-content-item-bottom-price {
+    font-size: 16px;
+    position: relative;
+    top: -4px;
+    margin-left: 5px;
 }
