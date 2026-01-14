@@ -1,7 +1,7 @@
 body {
-    font-family: "Cormorant";
+    font-family: "Alice";
     font-weight: 400;
-    font-size: 20px;
+    font-size: 21px;
 }
 
 .header-flex-wrap {
@@ -9,6 +9,7 @@ body {
     margin-top: 10px;
     align-items: center;
     justify-content: space-between;
+    font-family: "Cormorant";
 
 }
 
@@ -21,12 +22,12 @@ body {
 
 .logo-text {
     padding: 4px 10px 9px 11px;
-    width: 178px;
+    width: 185px;
     border-top: 1px solid;
     border-bottom: 1px solid;
 }
 
-.header-menu {
+.header-menu-old {
     display: flex;
     align-items: center;
 }
@@ -59,6 +60,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-family: "Cormorant";
 }
 .main-catalog-item {
     display: flex;
@@ -112,7 +114,7 @@ footer {
     margin-bottom: 54px;
 }
 
-.arrow-back-link {
+.catalog-arrow-back-icon {
     width: 20px;
     position: relative;
     left: -60px;
@@ -123,6 +125,8 @@ footer {
     margin-left: 10px;
     position: relative;
     top: -7px;
+    left: -10px;
+    font-family: "Cormorant";
 }
 
 .catalog-content {
@@ -161,4 +165,328 @@ footer {
     position: relative;
     top: -4px;
     margin-left: 5px;
+}
+
+/* попытки сделать меню */
+
+/* Стили для выпадающего меню */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 100px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    z-index: 1000;
+    margin-top: 8px;
+    right: 0;
+    border: 1px solid #eaeaea;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.dropdown-content-text {
+    text-align: center;
+}
+
+.dropdown-content.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.dropdown-content a {
+    color: #333333;
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.dropdown-content a:last-child {
+    border-bottom: none;
+}
+
+
+/* card */
+
+.card-page {
+    display: flex;
+    align-items: center;
+    margin-top: 48px;
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid;
+    justify-content: center;
+    margin-bottom: 54px;
+    font-family: "Alice";
+    font-size: 20px;
+}
+
+.card-arrow-back-icon {
+    position: relative;
+    left: -40px;
+    width: 20px;
+}
+
+.card-page-name {
+    width: 199px;
+    font-size: 16px;
+    position: relative;
+    top: -7px;
+    font-family: "Alice";
+    font-size: 20px;
+}
+
+.card-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Alice";
+}
+.card-item-image {
+    width: 269px;
+}
+.card-item-info {
+    padding-top: 36px;
+    padding-right: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.card-item-name {
+    font-size: 22px;
+    margin-bottom: 32px;
+    width: 269px;
+}
+.card-item-price {
+    font-size: 20px;
+    margin-bottom: 32px;
+    width: 269px;
+
+}
+.card-item-buttons {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -5px;
+}
+
+.card-item-buttons-add-to-cart {
+    width: 167px;
+    height: 58px;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-size: 16px;
+    margin-right: 53px;
+    margin-bottom: 32px;
+    font-family: "Bitter";
+}
+
+.card-item-buttons-wishlist {
+    width: 40px;
+    position: relative;
+    top: -15px;
+}
+
+
+.card-item-material {
+    margin-bottom: 12px;
+    font-size: 22px;
+    width: 269px;
+
+}
+
+.card-item-material-text {
+    margin-bottom: 32px;
+    font-size: 18px;
+    width: 269px;
+}
+
+.card-item-desc {
+    margin-bottom: 15px;
+    font-size: 22px;
+    width: 269px;
+
+}
+
+.card-item-desc-text {
+    margin-bottom: 20px;
+    font-size: 18px;
+    width: 269px;
+}
+
+
+/* contacts */
+
+.contacts {
+    font-family: "Bitter";
+    font-weight: 300;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts-top-layer {
+    margin-top: 145px;
+    margin-bottom: 20px;
+}
+
+.contacts-with-touch {
+    margin-bottom: 15px;
+}
+
+.contacts-with-touch-WA {
+    margin-right: 27px;
+}
+
+.contacts-with-touch-TG {
+    margin-right: 27px;
+}
+
+.contacts-email {
+    margin-bottom: 45px;
+}
+
+.contacts-topic-name {
+    margin-bottom: 11px;
+}
+
+.contacts-no-touch-PIN {
+    margin-right: 27px;
+}
+
+/* information */
+
+.information {
+    font-family: "Cormorant";
+    font-size: 20px;
+}
+
+.information-list {
+    display: flex;
+    flex-direction: column;
+    margin-left: 19px;
+    margin-top: 45px;
+}
+
+/* delivery */
+
+.delivery-chapter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Bitter";
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 45px;
+    margin: 45px auto;
+}
+
+.delivery-chapter-display {
+    display: flex;
+    min-height: 114px;
+    align-items: center;
+    margin-bottom: 45px;
+
+}
+
+.delivery-chapter-icon {
+    margin-right: 11px;
+}
+
+.delivery-chapter-text {
+    width: 245px;
+}
+
+/* profile */
+
+.profile {
+    font-family: "Bitter";
+    font-size: 16px;
+}
+
+.profile-navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+}
+.profile-navigation-wishlist {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: -44px;
+}
+.profile-navigation-layers {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    width: 270px;
+    height: 61px;
+    border: 1px solid;
+}
+
+.form-text-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-and-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-text {
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+
+.input-label {
+    display: block;
+    position: relative;
+    top: 25px;
+    left: 10px;
+}
+
+input {
+    padding: 20px 0px 0px 26px;
+}
+
+select {
+    display: block;
+    width: 270px;
+    height: 61px;
+    border: 1px solid;
+    padding: 20px 0px 0px 26px;
+}
+
+.profile-save-button {
+    width: 270px;
+    height: 80px;
+    background-color: #1e1e1e;
+    color: white;
+    margin-top: 21px;
+    font-size: 24px;
+    font-weight: 300;
 }
