@@ -414,6 +414,16 @@ footer {
 
 /* profile */
 
+input, select, textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px; /* Важно для iOS */
+}
+
 .profile {
     font-family: "Bitter";
     font-size: 16px;
@@ -442,6 +452,7 @@ input {
     width: 270px;
     height: 61px;
     border: 1px solid;
+    padding: 20px 0px 0px 26px;
 }
 
 .form-text-display {
@@ -469,10 +480,6 @@ input {
     left: 10px;
 }
 
-input {
-    padding: 20px 0px 0px 26px;
-}
-
 select {
     display: block;
     width: 270px;
@@ -489,4 +496,70 @@ select {
     margin-top: 21px;
     font-size: 24px;
     font-weight: 300;
+}
+
+input {
+    width: 270px;
+    height: 61px;
+    border: 1px solid;
+    padding: 20px 0px 0px 26px;
+}
+
+input::-webkit-date-and-time-value {
+    text-align: left;
+}
+
+/* order-history */
+
+.order-history {
+    display: flex;
+    flex-direction: column;
+    font-family: "Bitter";
+}
+.order-history-topic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+    font-size: 22px;
+}
+.arrow-back-link {
+}
+
+.order-history-arrow-back-icon {
+    width: 20px;
+    position: relative;
+    left: -60px;
+    top: 5px;
+}
+.order-history-topic-name {
+}
+
+.order-history-topic-icon {
+    width: 29px;
+    margin-right: 10px;
+}
+
+.order-display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    margin-top: 43px;
+}
+.order {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: solid 1px;
+    width: 267px;
+    height: 49px;
+    margin-bottom: 10px;
+}
+.order-number {
+}
+.order-price {
+}
+.order-date {
 }

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    
+    <link rel="stylesheet" href="/static/css/phone/reset.css">
+    <link rel="stylesheet" href="/static/css/phone/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Belanosima&family=Bitter:wght@100..900&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Kalnia:wght@300&display=swap" rel="stylesheet">
+</head>
+<body class="container">
+    <header class="header-flex-wrap">
+        <a href="main.html"><h1 class="logo-text">beautymeansjewelry</h1></a>
+        <div class="header-right-side-menu">
+            <div class="header-menu dropdown">
+                <button class="btn btn-menu header-menu-old" onclick="toggleMenu(this)">
+                    <img class="header-menu-icon" src="/static/icons/phone/Header-layers-icon.svg" alt="Header-layers-icon">
+                    <p>меню</p>
+                </button>
+                <div class="dropdown-content" id="dropdownMenu">
+                    <a class="dropdown-content-text" href="contacts.html">контакты</a>
+                    <a class="dropdown-content-text" href="delivery.html">доставка</a>
+                    <a class="dropdown-content-text" href="information.html">информация</a>
+                </div>
+            </div>
+            <a href="#">вход</a>
+            <a class="header-bag" href="#">
+                <img class="header-bag-icon" src="/static/icons/phone/Header-bag-icon.svg" alt="Header-bag-icon">
+                <p class="header-bag-count">2</p>
+            </a>
+        </div>
+    </header>
+    <main class="order-history">
+        <section class="order-history-topic">
+            <a class="arrow-back-link" href="javascript:history.back()">
+                <img class="order-history-arrow-back-icon" src="/static/icons/Back-arrow-icon.svg" alt="Back-arrow-icon">
+            </a>
+            <img class="order-history-topic-icon" src="/static/icons/Profile_Layers.svg" alt="Profile_Layers">
+            <h1 class="order-history-topic-name">история заказов</h1>
+        </section>
+        <section class="order-display">
+            <a class="order" href="#">
+                <p class="order-number">заказ №X</p>
+                <p class="order-price">7 200 р.</p>
+                <p class="order-date">от 06.04.26</p>
+            </a>
+            <a class="order" href="#">
+                <p class="order-number">заказ №X</p>
+                <p class="order-price">7 200 р.</p>
+                <p class="order-date">от 06.04.26</p>
+            </a>
+            <a class="order" href="#">
+                <p class="order-number">заказ №X</p>
+                <p class="order-price">7 200 р.</p>
+                <p class="order-date">от 06.04.26</p>
+            </a>
+            <a class="order" href="#">
+                <p class="order-number">заказ №X</p>
+                <p class="order-price">7 200 р.</p>
+                <p class="order-date">от 06.04.26</p>
+            </a>
+            <a class="order" href="#">
+                <p class="order-number">заказ №X</p>
+                <p class="order-price">7 200 р.</p>
+                <p class="order-date">от 06.04.26</p>
+            </a>
+            <a class="order" href="#">
+                <p class="order-number">заказ №X</p>
+                <p class="order-price">7 200 р.</p>
+                <p class="order-date">от 06.04.26</p>
+            </a>
+            <button>ещё..</button>
+        </section>
+    </main>
+    <footer>
+        <p class="footer">© 2025 - </p>
+    </footer>
+    <script src="/static/js/menu.js"></script>
+</body>
+</html>
